@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		String dbPassword = System.getenv("DB-PASSWORD");
+        System.out.println("dbPassword: " + dbPassword);
 	}
 	
 	@RequestMapping("/")
