@@ -18,4 +18,9 @@ public class Application {
 	public String home() {
 		return "Hello Docker World!";
 	}
+
+	@RequestMapping("/health")
+	public String health() {
+		return "OK";
+	}
 }
